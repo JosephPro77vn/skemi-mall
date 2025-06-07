@@ -1,0 +1,207 @@
+/* Global Styles */
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --success-color: #28a745;
+    --danger-color: #dc3545;
+    --warning-color: #ffc107;
+    --info-color: #17a2b8;
+    --light-color: #f8f9fa;
+    --dark-color: #343a40;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+/* Header Styles */
+.top-header {
+    font-size: 0.9rem;
+}
+
+.navbar-brand h2 {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.nav-link {
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: var(--primary-color);
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.carousel-caption h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* Product Categories */
+.product-categories .card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.product-categories .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.product-categories .card-title {
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+/* About Section */
+.about-section h2 {
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+/* Stats Section */
+.stats-section {
+    background-color: #f9f9f9;
+}
+
+.stats-section .display-4 {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+/* Contact Section */
+.contact-section {
+    background-color: var(--dark-color);
+}
+
+.contact-section h2 {
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.contact-section .form-control {
+    border-radius: 0;
+    padding: 0.75rem;
+}
+
+/* Footer */
+footer {
+    font-size: 0.9rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .carousel-caption h1 {
+        font-size: 1.8rem;
+    }
+    
+    .carousel-caption p {
+        font-size: 0.9rem;
+    }
+    
+    .stats-section .display-4 {
+        font-size: 2.5rem;
+    }
+}
+
+/* Admin Dashboard Styles */
+.admin-sidebar {
+    min-height: calc(100vh - 56px);
+    background-color: var(--dark-color);
+}
+
+.admin-sidebar .nav-link {
+    color: #fff;
+    border-left: 3px solid transparent;
+}
+
+.admin-sidebar .nav-link:hover,
+.admin-sidebar .nav-link.active {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-left-color: var(--primary-color);
+}
+
+.admin-content {
+    padding: 20px;
+}
+
+.admin-card {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.admin-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Product Detail Page */
+.product-detail-img {
+    max-height: 400px;
+    object-fit: contain;
+}
+
+.product-thumbnails img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.product-thumbnails img.active {
+    border-color: var(--primary-color);
+}
+
+/* Product Grid */
+.product-grid .card {
+    height: 100%;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-grid .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.product-grid .card-img-top {
+    height: 200px;
+    object-fit: contain;
+}
+
+/* Pagination */
+.pagination .page-link {
+    color: var(--primary-color);
+}
+
+.pagination .page-item.active .page-link {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+

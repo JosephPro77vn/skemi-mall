@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKMEI Watch - Clone</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container-fluid">
+            <div class="top-header py-2 bg-light">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <div class="social-links">
+                                <a href="#" class="me-3"><i class="fab fa-facebook"></i></a>
+                                <a href="#" class="me-3"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 text-end">
+                            <div class="contact-info">
+                                <a href="mailto:alex@skmei.com" class="me-3"><i class="fas fa-envelope me-1"></i>alex@skmei.com</a>
+                                <a href="tel:+8618122324760"><i class="fas fa-phone me-1"></i>+86 18122324760</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-white">
+                <div class="container">
+                    <a class="navbar-brand" href="/">
+                        <h2>SKMEI</h2>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="/">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/about">About Us</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button" data-bs-toggle="dropdown">
+                                    Products
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="productsDropdown">
+                                    <li><a class="dropdown-item" href="/products/digital-watch">Digital Watch</a></li>
+                                    <li><a class="dropdown-item" href="/products/quartz-watch">Quartz Watch</a></li>
+                                    <li><a class="dropdown-item" href="/products/lady-watch">Lady Watch</a></li>
+                                    <li><a class="dropdown-item" href="/products/mechanical-watch">Mechanical Watch</a></li>
+                                    <li><a class="dropdown-item" href="/products/smart-watch">Smart Watch</a></li>
+                                    <li><a class="dropdown-item" href="/products/kids-watch">Kids Watch</a></li>
+                                    <li><a class="dropdown-item" href="/products/led-watch">LED Watch</a></li>
+                                    <li><a class="dropdown-item" href="/products/azan-watch">Azan Watch</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/solution">Solution</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/global-footprint">Global Footprint</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/contact">Contact Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/verify">Verify</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="app">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://via.placeholder.com/1920x600" class="d-block w-100" alt="Watch Banner">
+                        <div class="carousel-caption">
+                            <h1>SKMEI Watches</h1>
+                            <p>Quality watches for every occasion</p>
+                            <a href="/products" class="btn btn-primary">Explore Products</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Categories Section -->
+        <section class="product-categories py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">HOT PRODUCTS</h2>
+                <div class="row">
+                    <div class="col-md-3 mb-4">
+                        <div class="card h-100">
+                            <img src="https://via.placeholder.com/300x300" class="card-img-top" alt="Digital Watch">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Digital Watch</h5>
+                                <a href="/products/digital-watch" class="btn btn-outline-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="card h-100">
+                            <img src="https://via.placeholder.com/300x300" class="card-img-top" alt="Quartz Watch">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Quartz Watch</h5>
+                                <a href="/products/quartz-watch" class="btn btn-outline-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="card h-100">
+                            <img src="https://via.placeholder.com/300x300" class="card-img-top" alt="Lady Watch">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Lady Watch</h5>
+                                <a href="/products/lady-watch" class="btn btn-outline-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="card h-100">
+                            <img src="https://via.placeholder.com/300x300" class="card-img-top" alt="Mechanical Watch">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Mechanical Watch</h5>
+                                <a href="/products/mechanical-watch" class="btn btn-outline-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-4">
+                    <a href="/products" class="btn btn-primary">More Products</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section py-5 bg-light">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <h2>About SKMEI</h2>
+                        <p>Skmei Watch headquarter located in Zhaoqing GuangDong, factory covers an area over 16000 square meters, has more than 300 employees. "SKMEI" brand already registered in about 200 countries, manufacturing more than 1 Million pieces watches every month, distributing by our wholesales over 160 countries, providing OEM/ODM service.</p>
+                        <p>"SKMEI" brand stock 6000 SKU for our distributors/wholesalers to choose, full with all kinds of series, such as sport style, classic gent&lady style, Azan watch, kids watch, smart watch, Atmospheric pressure watch, solar watch, compass watch, Bluetooth watch...</p>
+                        <a href="/about" class="btn btn-outline-primary">Read More</a>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="https://via.placeholder.com/600x400" class="img-fluid rounded" alt="About SKMEI">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Statistics Section -->
+        <section class="stats-section py-5">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-md-4 mb-4">
+                        <h2 class="display-4">4960+</h2>
+                        <p>Headquarters Located in Guangzhou, Covers an area of over 16,000 square meters</p>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <h2 class="display-4">49+</h2>
+                        <p>SKMEI has been registered in more than 160 countries around the world</p>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <h2 class="display-4">623</h2>
+                        <p>Guangzhou SKMEI Watch Co., Ltd Established in 2010 in Mainland China</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section py-5 bg-dark text-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h2>Contact Us</h2>
+                        <p>We'd love to hear from you. Please fill out the form below.</p>
+                        <form id="contactForm">
+                            <div class="mb-3">
+                                <input type="text" class="form-control" placeholder="Full Name" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="tel" class="form-control" placeholder="Your Phone">
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" placeholder="Your Email Address" required>
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control" rows="4" placeholder="Inquiry" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                    <div class="col-lg-6">
+                        <h2>Our Location</h2>
+                        <p><strong>Add:</strong> Block C6 Wanyang Zhongchuang Industrial Park, 41 Dawang Road, Zhaoqing High-tech Zone, Sihui City, Guangdong Province China</p>
+                        <p><strong>Tel:</strong> +86 0758 3988 367</p>
+                        <p><strong>Fax:</strong> +86 0758 398 1383</p>
+                        <p><strong>Email:</strong> alex@skmei.com</p>
+                        <div class="social-links mt-4">
+                            <a href="#" class="text-white me-3"><i class="fab fa-facebook fa-2x"></i></a>
+                            <a href="#" class="text-white me-3"><i class="fab fa-twitter fa-2x"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2025 SKMEI Watch Clone. All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <p>Designed by Manus</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="/js/main.js"></script>
+</body>
+</html>
+
