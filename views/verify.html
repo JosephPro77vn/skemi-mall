@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKMEI - Product Verification</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+        .top-bar {
+            background-color: #333;
+            color: #eee;
+            font-size: 0.75rem;
+        }
+        .main-header {
+            background-color: #fff;
+            border-bottom: 1px solid #eee;
+        }
+        .main-nav .nav-link {
+            @apply px-4 py-2 text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors duration-200;
+        }
+        .main-nav .nav-link.active {
+            @apply text-blue-600 font-semibold;
+        }
+        .btn-primary {
+            @apply bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-colors;
+        }
+        .input-field {
+            @apply p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500;
+        }
+        .footer-top-section {
+            background-color: #2e2e2e; /* Darker background for the top part of the footer */
+            color: #eee;
+            padding: 4rem 0; /* More padding as seen in the image */
+        }
+        .footer-input-field {
+            @apply w-full p-3 bg-gray-700 border border-gray-600 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500;
+        }
+        .footer-submit-btn {
+            @apply bg-gray-600 text-white px-8 py-3 rounded-md hover:bg-gray-700 transition-colors font-semibold;
+        }
+        .footer-section {
+            background-color: #222;
+            color: #ccc;
+            font-size: 0.85rem;
+        }
+        .footer-link {
+            @apply text-gray-400 hover:text-white transition-colors;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar py-1">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <div class="flex space-x-4">
+                <span><i class="fas fa-phone mr-1"></i> +86 13800138000</span>
+                <span><i class="fas fa-envelope mr-1"></i> info@skmei.com</span>
+            </div>
+            <div class="flex space-x-4">
+                <select class="bg-transparent text-white border-none focus:outline-none">
+                    <option value="en">English</option>
+                    <option value="zh">中文</option>
+                </select>
+                <select class="bg-transparent text-white border-none focus:outline-none">
+                    <option value="usd">USD</option>
+                    <option value="eur">EUR</option>
+                </select>
+                <a href="#" class="text-white hover:text-blue-400"><i class="fas fa-user mr-1"></i> Login / Register</a>
+            </div>
+        </div>
+    </div>
+
+    <header class="main-header py-4">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="https://placehold.co/120x40/000000/FFFFFF?text=SKMEI" alt="SKMEI Logo" class="h-10 mr-2">
+                <span class="text-2xl font-bold text-gray-800">SKMEI</span>
+            </div>
+
+            <div class="hidden md:flex flex-grow max-w-md mx-8">
+                <input type="text" placeholder="Search..." class="input-field w-full rounded-l-md">
+                <button class="bg-blue-600 text-white px-4 py-2 rounded-r-md hover:bg-blue-700">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+
+            <div class="flex items-center space-x-4">
+                <a href="#" class="text-gray-700 hover:text-blue-600 text-xl"><i class="fas fa-shopping-cart"></i></a>
+                <a href="#" class="text-gray-700 hover:text-blue-600 text-xl"><i class="fas fa-heart"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <nav class="bg-white shadow-sm py-3">
+        <div class="container mx-auto px-4">
+            <ul class="flex flex-wrap justify-center md:justify-start space-x-6">
+                <li><a href="index.html" class="nav-link">HOME</a></li>
+                <li><a href="index.html#aboutUsSection" class="nav-link">ABOUT</a></li>
+                <li><a href="products.html" class="nav-link">PRODUCTS</a></li>
+                <li><a href="global-footprint.html" class="nav-link">GLOBAL FOOTPRINT</a></li>
+                <li><a href="verify.html" class="footer-link">Verify</a></li>
+                <li><a href="contact-us.html" class="nav-link">CONTACT US</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="py-12 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-10">Product Verification</h2>
+
+            <div class="bg-white rounded-lg shadow-md p-8 max-w-2xl mx-auto">
+                <p class="text-gray-700 text-center mb-6">
+                    Enter the anti-counterfeit code (serial number) found on your SKMEI product to verify its authenticity.
+                </p>
+                <form id="verificationForm" class="space-y-6">
+                    <div>
+                        <label for="serialNumber" class="block text-gray-700 text-sm font-bold mb-2">Anti-Counterfeit Code / Serial Number</label>
+                        <input type="text" id="serialNumber" name="serialNumber" class="input-field w-full text-lg p-3" placeholder="e.g., SKMEI1234567890" required>
+                    </div>
+                    <button type="submit" class="btn-primary w-full text-lg py-3">Verify Product</button>
+                </form>
+
+                <div id="verificationResult" class="mt-8 p-4 rounded-lg text-center hidden">
+                    <p class="text-lg font-semibold" id="resultMessage"></p>
+                    <p class="text-sm text-gray-600 mt-2" id="resultDetails"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Footer Section (Subscribe and Contact) - Directly embedded -->
+    <div class="footer-top-section">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12">
+            <!-- Subscribe Column -->
+            <div>
+                <h3 class="text-2xl font-semibold text-white mb-6">Subscribe</h3>
+                <form class="space-y-4">
+                    <div>
+                        <input type="text" placeholder="Full Name" class="w-full p-3 bg-gray-700 border border-gray-600 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                    </div>
+                    <div>
+                        <input type="tel" placeholder="Your Phone" class="w-full p-3 bg-gray-700 border border-gray-600 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+                    <div>
+                        <input type="email" placeholder="Your Email Address" class="w-full p-3 bg-gray-700 border border-gray-600 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                    </div>
+                    <div>
+                        <textarea placeholder="Inquiry" rows="4" class="w-full p-3 bg-gray-700 border border-gray-600 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 resize-y"></textarea>
+                    </div>
+                    <button type="submit" class="bg-gray-600 text-white px-8 py-3 rounded-md hover:bg-gray-700 transition-colors font-semibold">Submit</button>
+                </form>
+            </div>
+
+            <!-- Contact Column -->
+            <div>
+                <h3 class="text-2xl font-semibold text-white mb-6">Contact</h3>
+                <div class="space-y-4 text-gray-300">
+                    <p>
+                        <i class="fas fa-map-marker-alt mr-2"></i>
+                        Add : Block C6 Wanyang Zhongchuang Industrial Park , 41 Dawang Road , Zhaoqing High-tech Zone , Sihui City , Guangdong Province China
+                    </p>
+                    <p><i class="fas fa-phone mr-2"></i> Tel : + 86 0758 3988 367</p>
+                    <p><i class="fas fa-fax mr-2"></i> Fax : + 86 0758 398 1383</p>
+                    <p><i class="fas fa-envelope mr-2"></i> Email : alex@skmei.com</p>
+                </div>
+                <div class="flex space-x-6 mt-8 text-2xl">
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer-section py-10">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+                <h3 class="text-lg font-semibold text-white mb-4">SKMEI</h3>
+                <p>Leading the way in watch innovation and design. Quality and style, always on time.</p>
+                <div class="flex space-x-4 mt-4">
+                    <a href="#" class="footer-link text-xl"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="footer-link text-xl"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="footer-link text-xl"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="footer-link text-xl"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold text-white mb-4">Quick Links</h3>
+                <ul class="space-y-2">
+                    <li><a href="index.html" class="footer-link">Home</a></li>
+                    <li><a href="index.html#aboutUsSection" class="footer-link">About Us</a></li>
+                    <li><a href="products.html" class="footer-link">Products</a></li>
+                    <li><a href="global-footprint.html" class="footer-link">Global Footprint</a></li>
+                    <li><a href="#" class="footer-link">News</a></li>
+                    <li><a href="contact-us.html" class="footer-link">Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold text-white mb-4">Support</h3>
+                <ul class="space-y-2">
+                    <li><a href="index.html" class="footer-link">Home</a></li>
+                    <li><a href="index.html#aboutUsSection" class="footer-link">About Us</a></li>
+                    <li><a href="products.html" class="footer-link">Products</a></li>
+                    <li><a href="global-footprint.html" class="footer-link">Global Footprint</a></li>
+                    <li><a href="verify.html" class="footer-link">Verify</a></li>
+                    <li><a href="contact-us.html" class="footer-link">Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold text-white mb-4">Contact Info</h3>
+                <p><i class="fas fa-map-marker-alt mr-2"></i> 123 Watch St, Time City, Global</p>
+                <p><i class="fas fa-phone mr-2"></i> +86 13800138000</p>
+                <p><i class="fas fa-envelope mr-2"></i> support@skmei.com</p>
+            </div>
+        </div>
+        <div class="container mx-auto px-4 text-center mt-8 border-t border-gray-700 pt-6">
+            <p>&copy; <span id="currentYear"></span> SKMEI. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Set current year in footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Basic verification logic (for demonstration)
+        const verificationForm = document.getElementById('verificationForm');
+        const verificationResult = document.getElementById('verificationResult');
+        const resultMessage = document.getElementById('resultMessage');
+        const resultDetails = document.getElementById('resultDetails');
+
+        verificationForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+            const serialNumber = document.getElementById('serialNumber').value.trim();
+
+            verificationResult.classList.remove('hidden', 'bg-green-100', 'bg-red-100');
+            resultMessage.textContent = '';
+            resultDetails.textContent = '';
+
+            if (serialNumber === 'SKMEI1234567890') { // Example valid code
+                verificationResult.classList.add('bg-green-100');
+                resultMessage.textContent = 'Verification Successful!';
+                resultDetails.textContent = 'This product is an authentic SKMEI product.';
+            } else if (serialNumber === 'FAKE123') { // Example invalid code
+                verificationResult.classList.add('bg-red-100');
+                resultMessage.textContent = 'Verification Failed!';
+                resultDetails.textContent = 'This code is not recognized. Please double-check or contact support.';
+            } else {
+                verificationResult.classList.add('bg-gray-100');
+                resultMessage.textContent = 'Checking...';
+                resultDetails.textContent = 'Please wait while we verify your product.';
+                // Simulate a network request
+                setTimeout(() => {
+                    verificationResult.classList.remove('bg-gray-100');
+                    verificationResult.classList.add('bg-red-100');
+                    resultMessage.textContent = 'Verification Failed!';
+                    resultDetails.textContent = 'The entered code could not be verified. Please try again or contact support.';
+                }, 1500);
+            }
+        });
+    </script>
+
+</body>
+</html>
